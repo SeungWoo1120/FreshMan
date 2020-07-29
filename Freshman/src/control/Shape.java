@@ -25,6 +25,7 @@ public class Shape {
 		System.out.println();
 		System.out.println();
 		
+		
 		//거꾸로 삼각형
 		for(int i = 1; i <= 5; i++) {
 			for(int j = 5; j >= i; j--) {
