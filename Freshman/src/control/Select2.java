@@ -1,11 +1,10 @@
-package variable;
+package control;
 
 import java.util.Scanner;
 
-public class Calcurator {
-
+public class Select2 {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("첫 번째 숫자를 입력하시오");
 		int a = sc.nextInt();
@@ -14,21 +13,18 @@ public class Calcurator {
 		System.out.println("두 번째 숫자를 입력하시오");
 		int b = sc.nextInt();
 		
-		switch(buho) {
-		case "+" :
+		if(buho.equals("+")) {
 			System.out.println(a + " + " + b + " = " + (a + b));
-			break;
-		case "-" :
+		} else if(buho.equals("-")) {
 			System.out.println(a + " - " + b + " = " + (a - b));
-			break;
-		case "*" :
+		} else if(buho.equals("*")) {
 			System.out.println(a + " * " + b + " = " + (a * b));
-			break;
-		case "/" :
+		} else if (buho.equals("/")) {
 			System.out.println(a + " / " + b + " = " + (double)a / b);
-			break;
+		} else {
+			System.out.println("이상한 것을 입력했습니다.");
 		}
+		
+					
 	}
-
 }
- 
