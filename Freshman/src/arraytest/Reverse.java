@@ -11,16 +11,24 @@ public class Reverse {
 		 * 4. 중복제거
 		 */
 		int a[] = new int[7];
+		// 난수 생성 후 배열에 저장
 		for(int i = 0; i < a.length; i++) {
 			a[i] = (int)(Math.random() * 48 + 1);
 			System.out.print(a[i] + " ");
 		}
 		System.out.println();
-		for(int i = 1; i <= a.length; i++) {
-			System.out.print(a[7-i] + " ");
+		
+		// 배열에 있는 것을 뒤집어서 출력
+		for(int i = 0; i < (a.length / 2); i++) {
+			int temp = a[i];
+			a[i] = a[(a.length-1)-i];
+			a[(a.length-1)-i] = temp;
 		}
+		System.out.println();
 		
-		
+		for(int i = 0; i < a.length; i++) {
+			System.out.print(a[i] + " ");
+		}
 	} 
 
 }
