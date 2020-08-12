@@ -19,7 +19,7 @@ public class Max {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(max(5, 3, 3));
+		System.out.println(max(234, 524, 1111));
 	}
 
 }

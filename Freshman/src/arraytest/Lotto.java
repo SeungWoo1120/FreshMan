@@ -6,7 +6,7 @@ public class Lotto {
 		// TODO Auto-generated method stub
 		int a[] = new int[7];
 		for(int i = 0; i < a.length; i++) {
-			a[i] = (int)(Math.random() * 7 + 1);
+			a[i] = (int)(Math.random() * 44 + 1);
 			for (int j = 0; j < i; j++) {
 				if(a[i] == a[j]) {
 					i--;
